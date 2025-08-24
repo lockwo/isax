@@ -1,0 +1,88 @@
+[project]
+name = "isax"
+version = "0.1.1"
+description = "Ising Models in JAX"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "lockwo"}
+]
+keywords = ["jax", "ising-model", "graphical-models", "machine-learning", "boltzmann-machine"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+urls = { repository = "https://github.com/lockwo/isax" }
+
+dependencies = [
+    "equinox>=0.11.2",
+    "jaxtyping>=0.2.23",
+]
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+examples = [
+    "matplotlib>=3.7.1",
+]
+testing = [
+    "pytest==7.2.0",
+    "nbmake==1.4.3",
+    "ruff==0.11.0",
+    "pyright==1.1.399",
+]
+docs = [
+    "hippogriffe==0.2.0",
+    "griffe==1.7.3",
+    "mkdocs==1.6.1",
+    "mkdocs-include-exclude-files==0.1.0",
+    "mkdocs-ipynb==0.1.0",
+    "mkdocs-material==9.6.7",
+    "mkdocstrings[python]==0.28.3",
+    "pymdown-extensions==10.14.3",
+]
+
+[tool.setuptools]
+packages = { find = { include = ["isax", "isax.*"] } }
+
+[tool.ruff]
+extend-include = ["*.ipynb"]
+src = []
+
+[tool.ruff.lint]
+# I001: isort import sorting
+# F401: Unused imports
+fixable = ["I001", "F401"]
+
+# E402: Module level import not at top of file
+# E731: Do not assign a lambda expression, use a def
+# E741: Ambiguous variable name
+# F722: Syntax error in forward annotation
+ignore = ["E402", "E731", "E741", "F722"]
+
+# Error codes to check for during linting
+# E: pycodestyle errors
+# F: pyflakes errors
+# I001: isort import sorting
+select = ["E", "F", "I001"]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+lines-after-imports = 2
+order-by-type = false
+
+[tool.pyright]
+reportIncompatibleMethodOverride = true
+reportIncompatibleVariableOverride = false # Incompatible with eqx.AbstractVar
+reportUnnecessaryTypeIgnoreComment = true
+include = ["isax"]
