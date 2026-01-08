@@ -86,6 +86,7 @@ nav:
         - 'examples/02_fps.ipynb'
         - 'examples/03_ising_thermodynamics.ipynb'
         - 'examples/04_paoa_optimization.ipynb'
+        - 'examples/05_ising_mnist.ipynb'
     - API Reference:
         - 'api/block.md'
         - 'api/sample.md'
