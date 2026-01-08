@@ -23,6 +23,10 @@ theme:
     icon:
         repo: fontawesome/brands/github  # GitHub logo in top right
         logo: "material/graph-outline"
+    custom_dir: "docs/_overrides"
+
+    bluesky_name: "@diogenesdude"
+    bluesky_url: "https://bsky.app/profile/diogenesdude.bsky.social"
 
 site_name: isax
 site_description: Block-parallel sampling for Ising models on arbitrary graphs using JAX.
