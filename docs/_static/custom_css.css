@@ -3,6 +3,20 @@ html {
     scroll-padding-top: 50px;
 }
 
+/* Fit the Bluesky handle alongside the GitHub one in the top right. */
+div.md-header__source {
+    width: revert;
+    max-width: revert;
+}
+
+a.md-source {
+    display: inline-block;
+}
+
+.md-source__repository {
+    max-width: 100%;
+}
+
 /* Emphasise sections of nav on left hand side */
 nav.md-nav {
   padding-left: 5px;
