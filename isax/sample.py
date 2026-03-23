@@ -8,7 +8,6 @@ from jaxtyping import Array, Float, Int, Key, PyTree
 
 from .block import EqxGraph
 
-
 _State = TypeVar("_State")
 
 

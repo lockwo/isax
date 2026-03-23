@@ -1,6 +1,7 @@
 import unittest
 
 import jax.numpy as jnp
+
 from isax.metrics import magnetization_per_site
 
 
