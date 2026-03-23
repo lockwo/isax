@@ -17,5 +17,4 @@ from .sample import (
     SamplingArgs as SamplingArgs,
 )
 
-
 __version__ = importlib.metadata.version("isax")

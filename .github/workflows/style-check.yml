@@ -33,6 +33,4 @@ jobs:
       - name: Run styles & lint check
         run: |
           pip install -e .[testing]
-          ruff format --check isax/ tests/ examples/
-          ruff check isax/ tests/ examples/
-          pyright isax/
+          pre-commit run --all-files
