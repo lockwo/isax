@@ -61,4 +61,4 @@ samples = sample_chain(init_state, [sampler, sampler], model, sampling_args, key
 - [ ] generic block typing
 - [ ] generalize pytree typing for states
 - [ ] support non-gibbs samplers (wolff, mh, etc.)
-- [ ] add some ML examples
+- [x] add some ML examples
