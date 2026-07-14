@@ -2,7 +2,7 @@
 
 ## Models
 
-::: isax.sample.IsingModel
+::: isax.IsingModel
     options:
         members:
             - energy
@@ -10,17 +10,17 @@
 
 ## Samplers
 
-::: isax.sample.AbstractSampler
+::: isax.AbstractSampler
     options:
         members: false
 
-::: isax.sample.IsingSampler
+::: isax.IsingSampler
     options:
         members:
             - sample
             - initialize_state
 
-::: isax.sample.AnnealedIsingSampler
+::: isax.AnnealedIsingSampler
     options:
         members:
             - __init__
@@ -29,10 +29,9 @@
 
 ## Sampling Utilities
 
-::: isax.sample.SamplingArgs
+::: isax.SamplingArgs
     options:
         members:
             - __init__
 
-::: isax.sample.sample_chain
-
+::: isax.sample_chain

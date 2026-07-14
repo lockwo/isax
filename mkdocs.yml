@@ -59,6 +59,10 @@ markdown_extensions:
 plugins:
     - search
     - ipynb
+    - hippogriffe:
+        extra_public_objects:
+            - jax.Array
+            - equinox.Module
     - mkdocstrings:
         handlers:
             python:

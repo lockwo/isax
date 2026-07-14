@@ -1,10 +1,10 @@
 # Block Graph Tools
 
-::: isax.block.Node
+::: isax.Node
     options:
         members: false
 
-::: isax.block.Edge
+::: isax.Edge
     options:
         members:
             - __init__
@@ -14,7 +14,7 @@
         members: false
 
 
-::: isax.block.BlockGraph
+::: isax.BlockGraph
     options:
         members:
             - __init__
