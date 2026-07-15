@@ -3,6 +3,7 @@ import importlib.metadata
 from .block import (
     BlockGraph as BlockGraph,
     Edge as Edge,
+    EqxGraph as EqxGraph,
     Node as Node,
 )
 from .metrics import (

@@ -9,7 +9,7 @@
         members:
             - __init__
 
-::: isax.block.EqxGraph
+::: isax.EqxGraph
     options:
         members: false
 
